@@ -1,0 +1,92 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1{
+    font-size: 48px;
+}
+
+.center{
+    text-align: center;
+    width: 50%;
+}
+
+#url{
+    width: 80%;
+    border-radius: 100px;
+    font-size: 24px;
+    border: 1px solid;
+    padding: 10px 20px;
+}
+
+#url:focus, #submit:focus, .response-box:focus, #response:focus, #copy:focus{
+    outline: none;
+    outline-width: 0px;
+}
+
+#submit{
+    font-size: 24px;
+    color: rgb(66, 66, 66);
+    border-radius: 12px;
+    margin-top: 36px;
+    padding: 4px 40px;
+    background-color: aquamarine;
+}
+
+#submit:hover{
+    color: rgb(172, 172, 172);
+}
+
+.response-box{
+    display: none;
+    width: 60%;
+    padding: 0;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 36px auto;
+}
+
+.response{
+    overflow: hidden;
+    padding-right: .5em;
+    padding-left: 4px;
+}
+
+#shortURL{
+    width: 100%;
+    border: none;
+    padding-bottom: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    background: none;
+}
+
+#copy{
+    color: black;
+    float: right;
+    background: none;
+    margin-top: 2px;
+    padding: 4px 8px;
+    box-shadow: 8px solid green;
+    border-left: 2px solid rgb(65, 69, 88);
+}
+
+#copy:hover{
+    cursor: pointer;
+}
+
+#copy:active{
+    color: aqua;
+}
+
+.show{
+    display: block;
+}
