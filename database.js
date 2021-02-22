@@ -1,7 +1,9 @@
 const { async } = require('hasha');
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://localhost:27017/URL-Shortner", {useNewUrlParser: true, useUnifiedTopology: true})
+const connectionString = "mongodb+srv://sanjeevkr:B9Y6IRRCkHlXsJAO@free-forever.kwqrt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+mongoose.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => {
         console.log("Sucess");
     })
