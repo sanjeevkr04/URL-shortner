@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const shortner = require('./shortner');
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 const app = express();
 
 app.use(bodyParser.json());
